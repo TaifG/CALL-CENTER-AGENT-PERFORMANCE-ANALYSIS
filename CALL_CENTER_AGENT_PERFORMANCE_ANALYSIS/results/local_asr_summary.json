@@ -1,0 +1,12 @@
+{
+  "fresh_asr": {
+    "channels": 31,
+    "reference_words": 1709,
+    "corpus_wer": 0.1930953774136922
+  },
+  "provided_asr": {
+    "channels": 31,
+    "reference_words": 1709,
+    "corpus_wer": 0.08543007606787595
+  }
+}
