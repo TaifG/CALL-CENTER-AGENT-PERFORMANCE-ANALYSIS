@@ -25,17 +25,21 @@ python -m venv .venv
 .venv/bin/python run.py analyze --limit 16 --model gemini-3.5-flash-lite
 .venv/bin/python app.py
 
-### Key Challenges & Fixes
+## Key Challenges & Fixes
+
 * **API & GPU Limits:** Handled by using a lightweight CPU model (`base.en` with int8) and content-based request caching to ensure smooth execution.
 * **Audio Decoding Issues:** Resolved by decoding WAV files directly via `SoundFile` and resampling with `SciPy` to bypass system library incompatibilities.
 * **Incomplete Reference Data:** Handled by excluding incomplete human reference channels from WER calculations and documenting the limitation transparently.
 
-### License & Attribution
+## License & Attribution
+
 Source data and derived validation files are attributed to Gridspace and the Gridspace-Stanford Harper Valley dataset under **CC BY 4.0**: https://creativecommons.org/licenses/by/4.0/.
+
 * **Raw audio:** Should be downloaded from the source rather than committed directly.
 * **Original license:** Details are available in `research/DATA_LICENSE.txt`.
 
-### Repository Structure
+## Repository Structure
+
 * **`src/`:** Core logic (data acquisition, ASR transcription, and Gemini analysis).
 * **`research/`:** Research surveys and data licensing details.
 * **`tests/`:** Automated regression and safety safeguards.
