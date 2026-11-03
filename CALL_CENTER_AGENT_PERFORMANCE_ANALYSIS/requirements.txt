@@ -1,8 +1,0 @@
-numpy==2.3.5
-scipy==1.16.3
-soundfile==0.14.0
-faster-whisper==1.2.1
-ctranslate2==4.8.4
-jiwer==4.0.0
-pydantic==2.14.2
-gradio==6.31.0
